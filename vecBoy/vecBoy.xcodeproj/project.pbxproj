@@ -22,11 +22,10 @@
 		97D18DF118520AD300EE558C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D18DD018520AD200EE558C /* UIKit.framework */; };
 		97D18DF918520AD300EE558C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97D18DF718520AD300EE558C /* InfoPlist.strings */; };
 		97D18DFB18520AD300EE558C /* vecBoyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D18DFA18520AD300EE558C /* vecBoyTests.m */; };
-		97D18E0718520BB300EE558C /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97D18E0618520BB300EE558C /* image.jpg */; };
-		97D18E0818520BB300EE558C /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97D18E0618520BB300EE558C /* image.jpg */; };
 		97D18E0B18520BC900EE558C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D18E0918520BC900EE558C /* CoreImage.framework */; };
 		97D18E0C18520BC900EE558C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D18E0A18520BC900EE558C /* ImageIO.framework */; };
 		97EE2F27185212B90065A940 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EE2F26185212B90065A940 /* QuartzCore.framework */; };
+		97EE2F29185219C90065A940 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97EE2F28185219C90065A940 /* image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +59,10 @@
 		97D18DF618520AD300EE558C /* vecBoyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vecBoyTests-Info.plist"; sourceTree = "<group>"; };
 		97D18DF818520AD300EE558C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97D18DFA18520AD300EE558C /* vecBoyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vecBoyTests.m; sourceTree = "<group>"; };
-		97D18E0618520BB300EE558C /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		97D18E0918520BC900EE558C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		97D18E0A18520BC900EE558C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		97EE2F26185212B90065A940 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		97EE2F28185219C90065A940 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = ../../../../../../../../Desktop/image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +181,7 @@
 		97D18E0518520B6E00EE558C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				97D18E0618520BB300EE558C /* image.jpg */,
+				97EE2F28185219C90065A940 /* image.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -265,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D18DE318520AD200EE558C /* Main_iPad.storyboard in Resources */,
-				97D18E0718520BB300EE558C /* image.jpg in Resources */,
+				97EE2F29185219C90065A940 /* image.jpg in Resources */,
 				97D18DE818520AD200EE558C /* Images.xcassets in Resources */,
 				97D18DE018520AD200EE558C /* Main_iPhone.storyboard in Resources */,
 				97D18DD718520AD200EE558C /* InfoPlist.strings in Resources */,
@@ -277,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D18DF918520AD300EE558C /* InfoPlist.strings in Resources */,
-				97D18E0818520BB300EE558C /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

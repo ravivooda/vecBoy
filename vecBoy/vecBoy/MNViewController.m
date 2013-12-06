@@ -32,25 +32,20 @@
     [waste setImage:image];
     [self.view.window addSubview:waste];
     for (CIFaceFeature *feature in features) {
-        CGRect wantedBounds = CGRectMake(feature.bounds.origin.x * self.view.frame.size.width / image.size.width, feature.bounds.origin.y * self.view.bounds.size.height / image.size.height, feature.bounds.size.width * 320 / image.size.width, feature.bounds.size.height * self.view.frame.size.height / image.size.height);
-        CGFloat faceWidth = wantedBounds.size.width;
-        NSLog(@"%@",NSStringFromCGRect(wantedBounds));
-        
+        CGFloat faceWidth = feature.bounds.size.width;
+        NSLog(@"%@",NSStringFromCGRect(feature.bounds));
         // create a UIView using the bounds of the face
-        UIView* faceView = [[UIView alloc] initWithFrame:wantedBounds];
+        UIView* faceView = [[UIView alloc] initWithFrame:feature.bounds];
         
         // add a border around the newly created UIView
         faceView.layer.borderWidth = 1;
         faceView.layer.borderColor = [[UIColor redColor] CGColor];
         [self.view.window addSubview:faceView];
         
-        CGFloat widthRatio = self.view.bounds.size.width / image.size.width;
-        CGFloat heightRatio= self.view.bounds.size.height/ image.size.height;
-        
         if(feature.hasLeftEyePosition)
         {
             // create a UIView with a size based on the width of the face
-            UIView* leftEyeView = [[UIView alloc] initWithFrame:CGRectMake((feature.leftEyePosition.x-faceWidth*0.15)*widthRatio, (feature.leftEyePosition.y-faceWidth*0.15)*heightRatio, faceWidth*0.3*widthRatio, faceWidth*0.3*heightRatio)];
+            UIView* leftEyeView = [[UIView alloc] initWithFrame:CGRectMake(feature.leftEyePosition.x-faceWidth*0.15, feature.leftEyePosition.y-faceWidth*0.15, faceWidth*0.3, faceWidth*0.3)];
             // change the background color of the eye view
             [leftEyeView setBackgroundColor:[[UIColor blueColor] colorWithAlphaComponent:0.3]];
             // set the position of the leftEyeView based on the face
